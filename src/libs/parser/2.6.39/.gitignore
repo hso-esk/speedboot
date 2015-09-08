@@ -1,0 +1,5 @@
+# ingore generated files
+yconf.c
+hconf.c
+lconf.c
+

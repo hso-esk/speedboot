@@ -1,0 +1,5 @@
+# ingore generated files
+zconf.hash.c
+zconf.lex.c
+zconf.tab.c
+zconf.c

@@ -1,0 +1,214 @@
+# SpeedBoot, a boot time optimization tool
+#
+# Copyright (c) 2015,
+# Hochschule Offenburg, University of Applied Sciences
+# Laboratory Embedded Systems and Communications Electronics.
+#    
+#
+# This file is part of SpeedBoot.
+# 
+# SpeedBoot is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 2 of the License, or
+# (at your option) any later version.
+# 
+# SpeedBoot is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with SpeedBoot.  If not, see <http://www.gnu.org/licenses/>.
+#
+# This work is licensed under the terms of the GNU GPL, version 2. For the full
+# license text please refer to the COPYING file in the top-level directory.
+
+menu "TEST menu"
+
+config USER_ATTR
+	tristate "User attribute 1"
+	timeexact "1.1234"
+	sizeexact "3.1"
+	select USER_ATTR_SAMPLE_TRACE_EVENTS_2
+	help
+	  This build trace event example modules
+
+config USER_ATTR_2
+	tristate "User attribute 2"
+	timecoarse "0.220"
+	sizecoarse "4.5"
+	help
+	  This build trace event example modules
+
+config USER_ATTR_3
+	tristate "User attribute 3"
+	timecoarse "n/a"
+	sizecoarse "n/a"
+	help
+	  This build trace event example modules
+
+
+config BR2_ECLIPSE_REGISTER
+	timeexact "0.974"
+	sizeexact "1.9"
+
+config BR2_CCACHE
+	timeexact "0.33"
+	sizecoarse "143"
+
+
+config BR2_WGET
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_SVN
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_BZR
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_GIT
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_CVS
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_LOCALFILES
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_SCP
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_SSH
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_HG
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_ZCAT
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_BZCAT
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_XZCAT
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_TAR_OPTIONS
+	timeexact "0.33"
+	sizecoarse "143"
+
+
+config BR2_DEFCONFIG_FROM_ENV
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_DEFCONFIG
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_DL_DIR
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_HOST_DIR
+	timeexact "0.33"
+	sizecoarse "143"
+
+
+config BR2_JLEVEL
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_CCACHE
+	timeexact "0.33"
+	sizecoarse "143"
+
+
+config BR2_CCACHE_DIR
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_CCACHE_INITIAL_SETUP
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_DEPRECATED
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_DEPRECATED_SINCE_2014_05
+	bool
+	default y
+
+choice
+
+config BR2_DEBUG_1
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_DEBUG_2
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_DEBUG_3
+	timeexact "0.33"
+	sizecoarse "143"
+endchoice
+
+
+config BR2_STRIP_strip
+	timeexact "0.1"
+	sizecoarse "143"
+
+config BR2_STRIP_sstrip
+	timeexact "0.2"
+	sizecoarse "143"
+
+config BR2_STRIP_none
+	timeexact "0.3"
+	sizecoarse "143"
+
+
+config BR2_STRIP_EXCLUDE_FILES
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_STRIP_EXCLUDE_DIRS
+	timeexact "0.33"
+	sizecoarse "143"
+
+
+config BR2_OPTIMIZE_0
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_OPTIMIZE_1
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_OPTIMIZE_2
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_OPTIMIZE_3
+	timeexact "0.33"
+	sizecoarse "143"
+
+config BR2_OPTIMIZE_S
+	timeexact "0.33"
+	sizecoarse "143"
+
+
+endmenu
