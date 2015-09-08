@@ -1,0 +1,8 @@
+# gitignore file
+doc/doxygen/output/
+build/
+
+*.lst
+*.o
+*.d
+*~
