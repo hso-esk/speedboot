@@ -1,6 +1,6 @@
 <img src="https://raw.github.com/hso-esk/_meta/master/HS-Logo_blau_60.png" width="300">
-
 About `SpeedBoot`
+
 ===============
 
 `SpeedBoot` is an optimization tool built on top of build systems (e.g. 
@@ -72,10 +72,10 @@ this file for the estimatation of the optimum start-up time:
 - sizecoarse
 
 e.g.:
-config USER_ATTR
 
-timeexact "1.1234"
-sizeexact "3.1"
+        config USER_ATTR
+          timeexact "1.1234"
+          sizeexact "3.1"
 
 In this way, a summary about selections count, package sizes and start-up times 
 can be shown during the configuration process. Also the configuration can be 
